@@ -8,11 +8,13 @@ app.use(cors());
 
 // Ruta para la página de bienvenida
 app.get('/', (req, res) => {
-  res.send('¡Hola Mundo!');
+    console.log(" entro a =============== hola mundo");
+    res.send('¡Hola Mundo!');
 });
 
 // Configura una ruta para manejar las solicitudes de los enlaces dinámicos
 app.get('/redirect', (req, res) => {
+    console.log(" entro a =============== redirect");
   const restauranteId = req.query.restauranteId;
   const numeroMesa = req.query.numeroMesa;
 
